@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Anti-FOUC: apply theme before any rendering -->
+<script>
+  (function(){
+    try{var t=localStorage.getItem('theme');if(!t)t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.classList.add(t);}catch(e){document.documentElement.classList.add('dark');}
+  })();
+</script>
+
+<!-- ═══════════════════════════════════════════════════════
+     PERFORMANCE
+═══════════════════════════════════════════════════════ -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preconnect" href="https://tzkrpiwpftwjmsneonmg.supabase.co" />
+<link rel="dns-prefetch" href="https://ai.gateway.lovable.dev" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" />
+
+<!-- ═══════════════════════════════════════════════════════
+     FAVICONS & PWA
+═══════════════════════════════════════════════════════ -->
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#0a0f1e" media="(prefers-color-scheme: dark)" />
+<meta name="theme-color" content="#f0f4ff" media="(prefers-color-scheme: light)" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="SpaceForge AI" />
+
+<!-- ═══════════════════════════════════════════════════════
+     PRIMARY SEO
+═══════════════════════════════════════════════════════ -->
+<title>SpaceForge AI — Turn Raw Data into Business Decisions in Seconds | AI Analytics Platform</title>
+<meta name="description" content="SpaceForge AI is an AI-powered data analytics platform. Upload CSV, Excel or connect databases — get instant insights, predictive forecasts, anomaly detection and executive reports. No coding required. Free to start." />
+<meta name="author" content="SpaceForge AI" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="googlebot" content="index, follow" />
+<meta name="bingbot" content="index, follow" />
+<link rel="canonical" href="https://spaceforge.in" />
+
+<!-- High-value long-tail keywords targeting global + India -->
+<meta name="keywords" content="AI data analytics platform, business intelligence AI, automated data analysis, upload CSV get insights, AI decision engine, predictive analytics tool, no-code data analysis, SpaceForge AI, spaceforge.in, AI forecasting tool, anomaly detection AI, KPI intelligence, automated EDA, exploratory data analysis, NLP data query, chat with data, natural language analytics, revenue forecasting AI, churn prediction, Tableau alternative, Power BI alternative, data analysis India, Tally data analysis, Zoho Books analytics, CEO dashboard AI, founder analytics, causal discovery AI" />
+
+<!-- ═══════════════════════════════════════════════════════
+     GEO & LANGUAGE TARGETING
+═══════════════════════════════════════════════════════ -->
+<meta name="geo.region" content="IN" />
+<meta name="geo.country" content="India" />
+<meta name="language" content="English" />
+<meta name="target" content="all" />
+<meta name="audience" content="all" />
+<meta name="coverage" content="Worldwide" />
+<meta name="distribution" content="Global" />
+<link rel="alternate" hreflang="en" href="https://spaceforge.in" />
+<link rel="alternate" hreflang="en-in" href="https://spaceforge.in" />
+<link rel="alternate" hreflang="x-default" href="https://spaceforge.in" />
+
+<!-- ═══════════════════════════════════════════════════════
+     OPEN GRAPH (Facebook, LinkedIn, WhatsApp)
+═══════════════════════════════════════════════════════ -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="SpaceForge AI" />
+<meta property="og:title" content="SpaceForge AI — Turn Raw Data into Business Decisions in Seconds" />
+<meta property="og:description" content="AI-powered data analytics platform. Upload CSV, Excel or connect databases — get instant insights, forecasts, anomaly detection and executive reports. No coding required." />
+<meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/0706ad2c-ddac-4a37-bfc3-8f2c52033b30/id-preview-27a706df--11d0c72b-5c51-45e7-8392-9e812c34445d.lovable.app-1771178290967.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="SpaceForge AI — AI Decision Intelligence Dashboard" />
+<meta property="og:url" content="https://spaceforge.in" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:locale:alternate" content="en_IN" />
+
+<!-- ═══════════════════════════════════════════════════════
+     TWITTER / X CARDS
+═══════════════════════════════════════════════════════ -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@SpaceForgeAI" />
+<meta name="twitter:creator" content="@SpaceForgeAI" />
+<meta name="twitter:title" content="SpaceForge AI — Turn Raw Data into Business Decisions in Seconds" />
+<meta name="twitter:description" content="Upload CSV, Excel or connect databases. Get instant AI-powered insights, forecasts, anomaly detection and executive reports. No coding required. Free to start." />
+<meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/0706ad2c-ddac-4a37-bfc3-8f2c52033b30/id-preview-27a706df--11d0c72b-5c51-45e7-8392-9e812c34445d.lovable.app-1771178290967.png" />
+<meta name="twitter:image:alt" content="SpaceForge AI Dashboard" />
+
+<!-- ═══════════════════════════════════════════════════════
+     GOOGLE VERIFICATION & ANALYTICS HINTS
+═══════════════════════════════════════════════════════ -->
+<meta name="google-site-verification" content="yhNQ32ElViXFSz3rJldGLl7FMiJpxbubHbpnFr7kQWQ" />
+
+<!-- ═══════════════════════════════════════════════════════
+     JSON-LD STRUCTURED DATA (Schema.org)
+═══════════════════════════════════════════════════════ -->
+
+<!-- SoftwareApplication -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "SpaceForge AI",
+  "alternateName": ["SpaceForge", "SpaceForge Analytics", "SpaceForge Decision Engine"],
+  "description": "AI-powered data analytics platform that transforms raw CSV, Excel and database data into instant insights, predictive forecasts, anomaly detection and executive reports.",
+  "url": "https://spaceforge.in",
+  "applicationCategory": "BusinessApplication",
+  "applicationSubCategory": "Data Analytics",
+  "operatingSystem": "Web, iOS, Android",
+  "browserRequirements": "Requires JavaScript. Works on Chrome, Firefox, Safari, Edge.",
+  "screenshot": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/0706ad2c-ddac-4a37-bfc3-8f2c52033b30/id-preview-27a706df--11d0c72b-5c51-45e7-8392-9e812c34445d.lovable.app-1771178290967.png",
+  "featureList": [
+    "AI Decision Intelligence Engine",
+    "Automated Machine Learning (AutoML)",
+    "Natural Language Data Queries",
+    "Anomaly Detection & Alerts",
+    "Revenue & Sales Forecasting",
+    "Customer Churn Prediction",
+    "KPI Intelligence Dashboard",
+    "Executive Narrative Generator",
+    "Causal Discovery AI",
+    "Business Health Monitor",
+    "GST & Indian SMB Integrations",
+    "Real-time Data Streaming"
+  ],
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Free Plan",
+      "price": "0",
+      "priceCurrency": "INR",
+      "description": "50 credits/month, core analytics features"
+    },
+    {
+      "@type": "Offer",
+      "name": "Standard Plan",
+      "price": "999",
+      "priceCurrency": "INR",
+      "description": "500 credits/month, advanced AI features"
+    },
+    {
+      "@type": "Offer",
+      "name": "Pro Plan",
+      "price": "2999",
+      "priceCurrency": "INR",
+      "description": "2000 credits/month, all features including CEO Mode"
+    }
+  ],
+  "creator": {
+    "@type": "Organization",
+    "name": "SpaceForge AI",
+    "url": "https://spaceforge.in",
+    "logo": "https://spaceforge.in/favicon-32x32.png",
+    "sameAs": [
+      "https://www.linkedin.com/in/benadict-francis-david-5959a7313",
+      "https://www.instagram.com/space_forge.in",
+      "https://twitter.com/SpaceForgeAI",
+      "https://github.com/benadictfrancisdev"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "email": "support@spaceforge.in"
+    }
+  }
+}
+</script>
+
+<!-- Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SpaceForge AI",
+  "url": "https://spaceforge.in",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://spaceforge.in/favicon-32x32.png",
+    "width": 32,
+    "height": 32
+  },
+  "description": "AI-powered data analytics and decision intelligence platform for businesses of all sizes.",
+  "address": { "@type": "PostalAddress", "addressCountry": "IN" },
+  "sameAs": [
+    "https://www.linkedin.com/in/benadict-francis-david-5959a7313",
+    "https://www.instagram.com/space_forge.in"
+  ]
+}
+</script>
+
+<!-- FAQPage (boosts featured snippets) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is SpaceForge AI?",
+      "acceptedAnswer": { "@type": "Answer", "text": "SpaceForge AI is an AI-powered data analytics platform that turns raw CSV, Excel or database data into instant business decisions, forecasts and recommendations in under 10 seconds — no data analyst needed." }
+    },
+    {
+      "@type": "Question",
+      "name": "How does SpaceForge AI work?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Upload your data file (CSV, Excel, JSON) or connect a database. SpaceForge AI automatically runs statistical analysis, machine learning, anomaly detection and generates plain-English decisions and recommendations." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is SpaceForge AI free to use?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. SpaceForge AI offers a free tier with 50 credits per month, enough for regular analysis. Paid plans start at ₹999/month for higher usage and advanced features." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does SpaceForge AI support Indian accounting software like Tally?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. SpaceForge AI has dedicated Indian SMB connectors for Tally Prime, Zoho Books, Busy Accounting and Vyapar — so you can analyze your business data without CSV exports." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my data safe on SpaceForge AI?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. SpaceForge AI runs a client-side privacy pipeline that scans for PII, tokenizes sensitive data, and only sends statistical summaries to AI — your raw data never leaves your browser." }
+    }
+  ]
+}
+</script>
+
+<!-- WebSite (enables sitelinks search box) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "SpaceForge AI",
+  "url": "https://spaceforge.in",
+  "description": "AI-powered data analytics platform — upload data, get instant business insights and decisions",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://spaceforge.in/docs?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<!-- BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://spaceforge.in" },
+    { "@type": "ListItem", "position": 2, "name": "Analyze Data", "item": "https://spaceforge.in/data-agent" },
+    { "@type": "ListItem", "position": 3, "name": "Pricing", "item": "https://spaceforge.in/pricing" },
+    { "@type": "ListItem", "position": 4, "name": "Docs", "item": "https://spaceforge.in/docs" }
+  ]
+}
+</script>
+
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>

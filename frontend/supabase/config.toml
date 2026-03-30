@@ -1,0 +1,22 @@
+project_id = "ejchqqvaycugslbaxspn"
+
+[functions.data-agent]
+verify_jwt = true
+
+[functions.fetch-connector-data]
+verify_jwt = false
+
+[functions.scheduled-sync]
+verify_jwt = false
+
+[functions.voice-synthesis]
+verify_jwt = true
+
+[functions.analyze]
+verify_jwt = true
+
+[functions.db-connect]
+verify_jwt = false
+
+[functions.webhook-receiver]
+verify_jwt = false

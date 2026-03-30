@@ -1,0 +1,34 @@
+project_id = "vebczmpouzpzzfalwsdm"
+
+[functions.data-agent]
+verify_jwt = false
+
+[functions.db-connect]
+verify_jwt = false
+
+[functions.analyze]
+verify_jwt = false
+
+[functions.razorpay-payment]
+verify_jwt = false
+
+[functions.razorpay-webhook]
+verify_jwt = false
+
+[functions.spacebot]
+verify_jwt = false
+
+[functions.predictive-forecast]
+verify_jwt = false
+
+[functions.ada-agent-run]
+verify_jwt = false
+
+[functions.fetch-connector-data]
+verify_jwt = false
+
+[functions.scheduled-sync]
+verify_jwt = false
+
+[functions.webhook-receiver]
+verify_jwt = false
