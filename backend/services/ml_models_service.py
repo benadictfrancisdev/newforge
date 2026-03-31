@@ -97,11 +97,12 @@ def train_prediction_model(
     if resolved_type == "classification" and not pd.api.types.is_numeric_dtype(y):
         target_encoder = LabelEncoder()
         y = target_encoder.fit_transform(y.astype(str))
-
-    y = pd.to_numeric(y, errors="coerce").fillna(0)
+        y_arr = y  # already numpy array from LabelEncoder
+    else:
+        y = pd.to_numeric(y, errors="coerce").fillna(0)
+        y_arr = y.values
 
     X_arr = X.values
-    y_arr = y.values
 
     X_train, X_test, y_train, y_test = train_test_split(X_arr, y_arr, test_size=0.2, random_state=42)
 
